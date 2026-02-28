@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Forgot Password</title>
+    <title>Reset Password</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,22 +14,27 @@
         <div class="col-md-5">
             <div class="card shadow">
 
-                <div class="card-header text-center bg-warning text-dark">
-                    <h4>Forgot Password</h4>
+                <div class="card-header text-center bg-danger text-white">
+                    <h4>Reset Password</h4>
                 </div>
 
                 <div class="card-body">
 
                     <form method="POST" action="">
-                        
+
                         <div class="mb-3">
-                            <label class="form-label">Enter Your Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="Enter your registered email" required>
+                            <label class="form-label">New Password</label>
+                            <input type="password" name="new_password" class="form-control" placeholder="Enter new password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm new password" required>
                         </div>
 
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-warning">
-                                Password Reset 
+                            <button type="submit" class="btn btn-danger">
+                                Update Password
                             </button>
                         </div>
 
@@ -39,8 +44,7 @@
 
                 <div class="card-footer text-center">
                     <small>
-                        Remember your password? 
-                        <a href="userLogin.php">Login here</a>
+                        Back to <a href="userLogin.php">Login</a>
                     </small>
                 </div>
 
