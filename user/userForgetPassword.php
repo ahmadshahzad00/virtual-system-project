@@ -29,7 +29,7 @@
 
                         <div class="d-grid">
                             <button type="submit" class="btn btn-warning">
-                                Reset Password
+                                Password Reset 
                             </button>
                         </div>
 
